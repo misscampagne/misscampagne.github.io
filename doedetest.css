@@ -1,0 +1,130 @@
+header img {
+  max-width:100%;
+  max-height: auto;
+  background-size: contain;
+}
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.2rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  margin: 1rem 3rem;
+}
+#home {
+  margin-left: 3rem;
+  margin-right: 6rem;
+}
+body{
+	font-size: 1rem;;
+	font-family: Roboto;
+  text-align: center;
+}
+main {
+  background-color: white;
+}
+h1{
+  font-weight: 300;
+  padding: 2rem 2rem 0rem 1rem;
+  font-size: 2rem;
+  color: #e72487;
+}
+.vraag{
+  font-size: 2rem;
+  margin: 0rem 1.5rem;
+}
+.antwoorden {
+  margin-bottom: 2rem;
+  text-align: left;
+  display: inline-block;
+}
+.antwoorden label{
+  display: block;
+  margin: 1rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+button {
+  font-family: roboto;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	border: 0px;
+	border-radius: 3rem;
+	padding: 2rem;
+	cursor: pointer;
+	margin-bottom: 2rem;
+}
+button:hover{
+	background-color: pink;
+  color: black;
+}
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 20rem;
+  margin-top: 40px;
+}
+#resultaat{
+  font-size: 1.5rem;
+  margin: 4rem;
+  line-height: 2.5rem;
+}
+#resultaat:hover {
+  margin: 3rem;
+  margin-bottom: 1rem;
+  background-color: pink;
+  padding: 1rem;
+}
+@media (min-width: 700px) {
+  main {
+    padding: 1rem 4rem;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    padding: 0rem 13rem;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    margin:  0rem 15rem;
+    background-color: black;
+  }
+  main {
+    padding: 0rem 8rem;
+    padding-bottom: 3rem;
+  }
+  h1 {
+    margin: 0rem 4rem;
+  }
+  #home {
+    margin-right: 25rem;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    margin-bottom: -4rem;
+  }
+  main {
+    padding: 0rem 12rem;
+    padding-bottom: 2rem;
+  }
+  #home {
+    margin-right: 40rem;
+  }
+}
